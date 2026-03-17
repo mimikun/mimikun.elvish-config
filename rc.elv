@@ -1,0 +1,13 @@
+# elvish config file
+use completers
+
+eval (starship init elvish)
+eval (mdbook completion elvish)
+eval (pixi completion --shell elvish | slurp)
+eval (tod shell completions elvish)
+eval (dotter gen-completions --shell elvish)
+eval (ghciwatch --completions elvish)
+eval (tombi completion elvish)
+eval (ty generate-shell-completion elvish | slurp)
+eval (codex completion elvish)
+eval (goose completion elvish)
